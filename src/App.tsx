@@ -14,6 +14,8 @@ const Section = styled.section`
   color: #CAD2C5;
 `;
 
+const SlideStack = Section;
+
 const Container = styled.div`
   display: flex;
   justify-content: center;
@@ -32,6 +34,14 @@ const Header = styled.h1`
 const HeaderWithEmoji = styled(Header)`
   margin-top: -2rem;
 `;
+
+const Header2 = styled.h2`
+  font-size: 25px;
+  margin: 0;
+  padding: 0;
+  line-height: 2em;
+`;
+
 
 const Slide = ({
   children,
@@ -54,7 +64,31 @@ function App() {
     <div className="reveal">
       <div className="slides">
         <Slide><Header>Why Vim is the Best Text Editor <br />You're Not Using (Yet)</Header></Slide>
-        <Slide><HeaderWithEmoji>🤨<br />Why would you listen<br />to me about Vim?</HeaderWithEmoji></Slide>
+        <SlideStack>
+          <Slide><HeaderWithEmoji>🤨<br />Why would you listen<br />to me about Vim?</HeaderWithEmoji></Slide>
+          <Slide>
+            <div>
+              <Header>I've used vim...</Header>
+              <Header2 className="fragment fade-up">for my entire career.</Header2>
+              <Header2 className="fragment fade-up">at Physna for almost everything.</Header2>
+              <Header2 className="fragment fade-up">on Windows, Linux, and Macos.</Header2>
+            </div>
+          </Slide>
+          <Slide>
+            <div>
+              <Header>I've written...</Header>
+              <Header2 className="fragment fade-up">a lot of my code in vim.</Header2>
+              <Header2 className="fragment fade-up">my own configuration for vim several times.</Header2>
+            </div>
+          </Slide>
+          <Slide>
+            <div>
+              <Header>Although...</Header>
+              <Header2 className="fragment fade-up">there are people who may do more than me.</Header2>
+            </div>
+          </Slide>
+          <Slide><HeaderWithEmoji>👌<br />That's why you would listen<br />to me about Vim.</HeaderWithEmoji></Slide>
+        </SlideStack>
         <Slide><Header>Vim History</Header></Slide>
         <Slide><Header>Why Vim?</Header></Slide>
         <Slide><Header>Vim Basics</Header></Slide>
