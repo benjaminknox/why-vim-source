@@ -214,10 +214,10 @@ function App() {
                   Vi closed sourced because of its roots in ed on unix
                 </Detail>
                 <Detail className="fragment fade-right" data-fragment-index="2">
-                  Limited Vi clone STEVIE created by Tim Thompson
+                  Limited Vi clone STEVIE created
                 </Detail>
                 <Detail className="fragment fade-right" data-fragment-index="3">
-                  Vim created (Vi Immitation) ported from STEVIE
+                  Vim created by Bram Moolenar ported from STEVIE
                 </Detail>
                 <Detail className="fragment fade-right" data-fragment-index="4">
                   Vi clone elvis created which ships with slackware today
