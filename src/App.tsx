@@ -183,25 +183,25 @@ function App() {
                 </DateLine>
                 <DateLine
                   className="fragment fade-left"
-                  data-fragment-index="3"
+                  data-fragment-index="2"
                 >
                   1987
                 </DateLine>
                 <DateLine
                   className="fragment fade-left"
-                  data-fragment-index="5"
+                  data-fragment-index="3"
                 >
                   1988
                 </DateLine>
                 <DateLine
                   className="fragment fade-left"
-                  data-fragment-index="7"
+                  data-fragment-index="4"
                 >
                   1990
                 </DateLine>
                 <DateLine
                   className="fragment fade-left"
-                  data-fragment-index="9"
+                  data-fragment-index="5"
                 >
                   1991
                 </DateLine>
@@ -210,21 +210,21 @@ function App() {
                 <Detail>
                   Vi (visual) Started by Bill Joy at Berkeley, based on ed
                 </Detail>
-                <Detail className="fragment fade-right" data-fragment-index="2">
+                <Detail className="fragment fade-right" data-fragment-index="1">
                   Vi closed sourced because of its roots in ed on unix
                 </Detail>
-                <Detail className="fragment fade-right" data-fragment-index="4">
+                <Detail className="fragment fade-right" data-fragment-index="2">
                   Limited Vi clone STEVIE created by Tim Thompson
                 </Detail>
-                <Detail className="fragment fade-right" data-fragment-index="6">
+                <Detail className="fragment fade-right" data-fragment-index="3">
                   Vim created (Vi Immitation) ported from STEVIE
                 </Detail>
-                <Detail className="fragment fade-right" data-fragment-index="8">
+                <Detail className="fragment fade-right" data-fragment-index="4">
                   Vi clone elvis created which ships with slackware today
                 </Detail>
                 <Detail
                   className="fragment fade-right"
-                  data-fragment-index="10"
+                  data-fragment-index="5"
                 >
                   Vim 1st public release v1.14
                 </Detail>
@@ -243,46 +243,46 @@ function App() {
                 </DateLine>
                 <DateLine
                   className="fragment fade-left"
-                  data-fragment-index="3"
+                  data-fragment-index="2"
                 >
                   2002
                 </DateLine>
                 <DateLine
                   className="fragment fade-left"
-                  data-fragment-index="5"
+                  data-fragment-index="3"
                 >
                   2016
                 </DateLine>
                 <DateLine
                   className="fragment fade-left"
-                  data-fragment-index="7"
+                  data-fragment-index="4"
                 >
                   2021
                 </DateLine>
                 <DateLine
                   className="fragment fade-left"
-                  data-fragment-index="9"
+                  data-fragment-index="5"
                 >
                   2022
                 </DateLine>
               </Dates>
               <Details>
                 <Detail>Vim 1st public release v1.14</Detail>
-                <Detail className="fragment fade-right" data-fragment-index="2">
+                <Detail className="fragment fade-right" data-fragment-index="1">
                   Vim 4 released, comes with a Gui, gvim
                 </Detail>
-                <Detail className="fragment fade-right" data-fragment-index="4">
+                <Detail className="fragment fade-right" data-fragment-index="2">
                   Original Vi source code released as OSS
                 </Detail>
-                <Detail className="fragment fade-right" data-fragment-index="6">
+                <Detail className="fragment fade-right" data-fragment-index="3">
                   Vi celebrates its 40 year anniversary
                 </Detail>
-                <Detail className="fragment fade-right" data-fragment-index="8">
+                <Detail className="fragment fade-right" data-fragment-index="4">
                   Vim celebrates its 30 year anniversary
                 </Detail>
                 <Detail
                   className="fragment fade-right"
-                  data-fragment-index="10"
+                  data-fragment-index="5"
                 >
                   Vim 9.0 released
                 </Detail>
