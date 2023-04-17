@@ -217,7 +217,7 @@ function App() {
                   Limited Vi clone STEVIE created
                 </Detail>
                 <Detail className="fragment fade-right" data-fragment-index="3">
-                  Vim created by Bram Moolenar ported from STEVIE
+                  Vim created by Bram Moolenaar ported from STEVIE
                 </Detail>
                 <Detail className="fragment fade-right" data-fragment-index="4">
                   Vi clone elvis created which ships with slackware today
