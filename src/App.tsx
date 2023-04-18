@@ -1,5 +1,7 @@
 import styled from "styled-components";
-import { useEffect, ReactElement, ReactText } from "react";
+import { useEffect, ReactElement, ReactText, useRef } from "react";
+
+import ReactHlsPlayer from "react-hls-player";
 
 import "reveal.js/dist/reveal.css";
 
@@ -82,6 +84,10 @@ const Detail = styled(Header2)`
   &:nth-of-type(even) {
     color: #93a489;
   }
+`;
+
+const VideoWrapper = styled.div`
+  padding: 0 80px;
 `;
 
 const Slide = ({
@@ -222,10 +228,7 @@ function App() {
                 <Detail className="fragment fade-right" data-fragment-index="4">
                   Vi clone elvis created which ships with slackware today
                 </Detail>
-                <Detail
-                  className="fragment fade-right"
-                  data-fragment-index="5"
-                >
+                <Detail className="fragment fade-right" data-fragment-index="5">
                   Vim 1st public release v1.14
                 </Detail>
               </Details>
@@ -280,10 +283,7 @@ function App() {
                 <Detail className="fragment fade-right" data-fragment-index="4">
                   Vim celebrates its 30 year anniversary
                 </Detail>
-                <Detail
-                  className="fragment fade-right"
-                  data-fragment-index="5"
-                >
+                <Detail className="fragment fade-right" data-fragment-index="5">
                   Vim 9.0 released
                 </Detail>
               </Details>
@@ -293,9 +293,93 @@ function App() {
             <Header>Brief Vim History</Header>
           </Slide>
         </SlideStack>
-        <Slide>
-          <Header>Why Vim?</Header>
-        </Slide>
+        <SlideStack>
+          <Slide>
+            <div>
+              <Header>Why Vim?</Header>
+              <Header2>The Philosophy of Vim</Header2>
+            </div>
+          </Slide>
+          <Slide>
+            <div>
+              <Header>Portability</Header>
+              <Header2 className="fragment fade-up">
+                Customizations are easy to write with{" "}
+                <a href="https://devhints.io/vimscript" target="blank">
+                  vimscript
+                </a>
+              </Header2>
+              <Header2 className="fragment fade-up">
+                Configurable by default, for example,{" "}
+                <a
+                  href="https://github.com/benjaminknox/vim/blob/master/.vimrc"
+                  target="blank"
+                >
+                  my config on github
+                </a>
+              </Header2>
+            </div>
+          </Slide>
+          <Slide>
+            <div>
+              <Header>Plugin Ecosystem</Header>
+              <Header2 className="fragment fade-up">
+                Plugins are Open Source,{" "}
+                <a href="https://vimawesome.com" target="blank">
+                  VimAwesome
+                </a>
+              </Header2>
+              <Header2 className="fragment fade-up">
+                There are plugin managers, I use{" "}
+                <a href="https://github.com/junegunn/vim-plug" target="blank">
+                  vim-plug
+                </a>
+                , but there are others
+              </Header2>
+            </div>
+          </Slide>
+          <Slide>
+            <div>
+              <Header2>Setting it up</Header2>
+              <GetVimGoingVideo />
+            </div>
+          </Slide>
+          <Slide>
+            <div>
+              <Header>By devs, for devs</Header>
+              <Header2 className="fragment fade-up">
+                Linting has wide support, I use{" "}
+                <a href="https://github.com/dense-analysis/ale">ale</a> but
+                there are others
+              </Header2>
+              <Header2 className="fragment fade-up">
+                <a
+                  href="https://github.com/rafi/awesome-vim-colorschemes"
+                  target="blank"
+                >
+                  Colorschemes
+                </a>{" "}
+                have wide support
+              </Header2>
+            </div>
+          </Slide>
+          <Slide>
+            <div>
+              <Header>Finally: Vim is an editor not a writer</Header>
+              <Header2 className="fragment fade-up">
+                You manipulate the code
+              </Header2>
+              <Header2 className="fragment fade-up">
+                Your hands don't leave keyboard
+              </Header2>
+              <Header2 className="fragment fade-up">
+                <a href="https://devhints.io/vim" target="blank">
+                  Commands Cheat Sheet
+                </a>
+              </Header2>
+            </div>
+          </Slide>
+        </SlideStack>
         <Slide>
           <Header>Vim Basics</Header>
         </Slide>
@@ -306,5 +390,22 @@ function App() {
     </div>
   );
 }
+
+const GetVimGoingVideo = () => {
+  const player = useRef<HTMLVideoElement>(null);
+
+  return (
+    <VideoWrapper>
+      <ReactHlsPlayer
+        playerRef={player}
+        src="/vim-get-going.m3u8"
+        autoPlay={false}
+        controls={true}
+        width="100%"
+        height="auto"
+      />
+    </VideoWrapper>
+  );
+};
 
 export default App;
