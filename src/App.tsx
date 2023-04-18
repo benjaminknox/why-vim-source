@@ -175,7 +175,7 @@ function App() {
         </SlideStack>
         <SlideStack>
           <Slide>
-            <Header>Brief Vim History</Header>
+            <Header>A Brief Vim History</Header>
           </Slide>
           <Slide>
             <Timeline>
@@ -290,7 +290,7 @@ function App() {
             </Timeline>
           </Slide>
           <Slide>
-            <Header>Brief Vim History</Header>
+            <Header>A Brief Vim History</Header>
           </Slide>
         </SlideStack>
         <SlideStack>
@@ -377,6 +377,11 @@ function App() {
                   Commands Cheat Sheet
                 </a>
               </Header2>
+            </div>
+          </Slide>
+          <Slide>
+            <div>
+              <Header>That's Why We Vim</Header>
             </div>
           </Slide>
         </SlideStack>
