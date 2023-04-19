@@ -163,15 +163,6 @@ function App() {
               </Header2>
             </div>
           </Slide>
-          <Slide>
-            <HeaderWithEmoji>
-              👌
-              <br />
-              That's why you would listen
-              <br />
-              to me about Vim.
-            </HeaderWithEmoji>
-          </Slide>
         </SlideStack>
         <SlideStack>
           <Slide>
@@ -385,9 +376,47 @@ function App() {
             </div>
           </Slide>
         </SlideStack>
-        <Slide>
-          <Header>Vim Basics</Header>
-        </Slide>
+        <SlideStack>
+          <Slide>
+            <Header>Vim Basics</Header>
+          </Slide>
+          <Slide>
+            <div>
+              <Header2>Normal Mode - Moving around</Header2>
+              <NormalModeMovingAroundVideo />
+            </div>
+          </Slide>
+          <Slide>
+            <div>
+              <Header2>Insert Mode - Writing</Header2>
+              <InsertModeVideo />
+            </div>
+          </Slide>
+          <Slide>
+            <div>
+              <Header2>Visual Mode - Selecting</Header2>
+              <VisualModeVideo />
+            </div>
+          </Slide>
+          <Slide>
+            <div>
+              <Header2>Command Mode</Header2>
+              <CommandModeVideo />
+            </div>
+          </Slide>
+          <Slide>
+            <div>
+              <Header2>Macros</Header2>
+              <MacrosVideo />
+            </div>
+          </Slide>
+          <Slide>
+            <div>
+              <Header2>Undo / Redo</Header2>
+              <UndoRedoVideo />
+            </div>
+          </Slide>
+        </SlideStack>
         <Slide>
           <Header>Resources</Header>
         </Slide>
@@ -412,5 +441,107 @@ const GetVimGoingVideo = () => {
     </VideoWrapper>
   );
 };
+
+const NormalModeMovingAroundVideo = () => {
+  const player = useRef<HTMLVideoElement>(null);
+
+  return (
+    <VideoWrapper>
+      <ReactHlsPlayer
+        playerRef={player}
+        src="/normal-mode-moving-around.m3u8"
+        autoPlay={false}
+        controls={true}
+        width="100%"
+        height="auto"
+      />
+    </VideoWrapper>
+  );
+};
+
+const InsertModeVideo = () => {
+  const player = useRef<HTMLVideoElement>(null);
+
+  return (
+    <VideoWrapper>
+      <ReactHlsPlayer
+        playerRef={player}
+        src="/insert-mode.m3u8"
+        autoPlay={false}
+        controls={true}
+        width="100%"
+        height="auto"
+      />
+    </VideoWrapper>
+  );
+};
+
+const VisualModeVideo = () => {
+  const player = useRef<HTMLVideoElement>(null);
+
+  return (
+    <VideoWrapper>
+      <ReactHlsPlayer
+        playerRef={player}
+        src="/visual-mode.m3u8"
+        autoPlay={false}
+        controls={true}
+        width="100%"
+        height="auto"
+      />
+    </VideoWrapper>
+  );
+};
+
+const CommandModeVideo = () => {
+  const player = useRef<HTMLVideoElement>(null);
+
+  return (
+    <VideoWrapper>
+      <ReactHlsPlayer
+        playerRef={player}
+        src="/command-mode.m3u8"
+        autoPlay={false}
+        controls={true}
+        width="100%"
+        height="auto"
+      />
+    </VideoWrapper>
+  );
+};
+
+const MacrosVideo = () => {
+  const player = useRef<HTMLVideoElement>(null);
+
+  return (
+    <VideoWrapper>
+      <ReactHlsPlayer
+        playerRef={player}
+        src="/macros.m3u8"
+        autoPlay={false}
+        controls={true}
+        width="100%"
+        height="auto"
+      />
+    </VideoWrapper>
+  );
+};
+
+const UndoRedoVideo = () => {
+  const player = useRef<HTMLVideoElement>(null);
+
+  return (
+    <VideoWrapper>
+      <ReactHlsPlayer
+        playerRef={player}
+        src="/undo-redo.m3u8"
+        autoPlay={false}
+        controls={true}
+        width="100%"
+        height="auto"
+      />
+    </VideoWrapper>
+  );
+}
 
 export default App;

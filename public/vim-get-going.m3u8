@@ -1,8 +1,8 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-TARGETDURATION:10
+#EXT-X-TARGETDURATION:11
 #EXT-X-MEDIA-SEQUENCE:0
-#EXTINF:10.050000,
+#EXTINF:10.983333,
 vim-get-going0.ts
 #EXTINF:10.000000,
 vim-get-going1.ts
@@ -20,6 +20,14 @@ vim-get-going6.ts
 vim-get-going7.ts
 #EXTINF:10.000000,
 vim-get-going8.ts
-#EXTINF:0.183333,
+#EXTINF:10.000000,
 vim-get-going9.ts
+#EXTINF:10.000000,
+vim-get-going10.ts
+#EXTINF:10.000000,
+vim-get-going11.ts
+#EXTINF:10.000000,
+vim-get-going12.ts
+#EXTINF:1.383333,
+vim-get-going13.ts
 #EXT-X-ENDLIST
