@@ -16,6 +16,11 @@ const Section = styled.section`
   color: #cad2c5;
 `;
 
+const Image = styled.img`
+  border-radius: 10px;
+  border: 1px solid #1f292e;
+`;
+
 const SlideStack = Section;
 
 const Container = styled.div`
@@ -281,6 +286,20 @@ function App() {
             </Timeline>
           </Slide>
           <Slide>
+            <div>
+              <Header>Usage Stats in 2022</Header>
+              <br />
+              <br />
+              <br />
+              <Image src="/usage-stats.png" />
+              <br />
+              <br />
+              <br />
+              <br />
+              <a href="https://survey.stackoverflow.co/2022/#section-most-popular-technologies-integrated-development-environment" target="blank">Stack Overflow</a>
+            </div>
+          </Slide>
+          <Slide>
             <Header>A Brief Vim History</Header>
           </Slide>
         </SlideStack>
@@ -361,7 +380,7 @@ function App() {
                 You manipulate the code
               </Header2>
               <Header2 className="fragment fade-up">
-                Your hands don't leave keyboard
+                Your hands don't leave the keyboard
               </Header2>
               <Header2 className="fragment fade-up">
                 <a href="https://devhints.io/vim" target="blank">
@@ -418,7 +437,12 @@ function App() {
           </Slide>
         </SlideStack>
         <Slide>
-          <Header>Resources</Header>
+          <div>
+            <Header>How do I get started?</Header>
+            <Header2>Install Vim keybindings in your editor, most have them</Header2>
+            <Header2>Tutorials, <a href="https://www.openvim.com/" target="blank">openvim.com</a>, <a href="https://vim-adventures.com/">Vim Adventures</a></Header2>
+            <Header2>But I suggest jumping right in!</Header2>
+          </div>
         </Slide>
       </div>
     </div>
